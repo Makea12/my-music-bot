@@ -5,7 +5,7 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, FSInputFil
 from aiogram.filters import Command
 import yt_dlp
 
-API_TOKEN = "8311936377:AAGJ2kioXGigDVr9DHBAbfkveUde3i_Ytto"
+API_TOKEN = "1234567890"
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
 
@@ -113,4 +113,5 @@ async def music_downloader(message: types.Message, query: str, count: int):
 
 
 if __name__ == "__main__":
+
     asyncio.run(dp.start_polling(bot))
